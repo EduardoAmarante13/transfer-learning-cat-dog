@@ -102,6 +102,24 @@ Acurácia no teste: 98.91%
 
 O resultado demonstra a eficiência do Transfer Learning para problemas de classificação de imagens, permitindo alcançar uma alta precisão sem a necessidade de treinar uma rede neural convolucional completamente do zero.
 
+### 📈 Gráfico de Acurácia
+
+O gráfico abaixo apresenta a evolução da acurácia durante as 5 épocas de treinamento.
+
+![Gráfico de Acurácia](accuracy.png)
+
+Na última época, o modelo alcançou aproximadamente **98,99% de acurácia no treinamento** e **98,88% de acurácia na validação**.
+
+### 📉 Gráfico de Loss
+
+O gráfico abaixo apresenta a evolução da função de perda (loss) durante as 5 épocas de treinamento.
+
+![Gráfico de Loss](loss.png)
+
+A redução e estabilização da loss indicam que o modelo conseguiu aprender características relevantes para diferenciar gatos e cachorros.
+
+Na última época, foram obtidos aproximadamente **0,0281 de loss no treinamento** e **0,0272 de loss na validação**.
+
 ## 🔎 Previsões
 
 O modelo também foi utilizado para realizar previsões em imagens do conjunto de teste.
@@ -122,6 +140,22 @@ Real: Cachorro
 ```
 
 Essa etapa permite verificar visualmente o desempenho do modelo.
+
+### 🖼️ Exemplos de Previsões
+
+A imagem abaixo apresenta algumas classificações realizadas pelo modelo, comparando a classe prevista com a classe real.
+
+![Previsões do Modelo](predicoes.png)
+
+### 🔍 Análise dos Erros
+
+Apesar da alta acurácia obtida pelo modelo, algumas classificações incorretas podem ser observadas na imagem acima. Em alguns casos, imagens de cachorros foram classificadas como gatos.
+
+Esses erros demonstram que uma acurácia elevada não significa que o modelo seja perfeito. Determinadas características das imagens, como posição do animal, enquadramento, iluminação, fundo ou características visuais específicas, podem dificultar a classificação.
+
+Mesmo apresentando alguns erros individuais, o modelo alcançou **98,91% de acurácia no conjunto de teste**, indicando um bom desempenho geral.
+
+A análise visual das previsões complementa as métricas numéricas e ajuda a compreender tanto os acertos quanto as limitações do modelo.
 
 ## 🛠️ Tecnologias Utilizadas
 
